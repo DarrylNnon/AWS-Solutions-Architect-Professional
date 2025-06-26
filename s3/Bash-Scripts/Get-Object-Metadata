@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+aws s3api head-object --bucket my-example-bucket-d1 --key file.txt

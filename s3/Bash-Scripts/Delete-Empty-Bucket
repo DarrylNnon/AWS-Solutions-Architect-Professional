@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+aws s3api delete-bucket --bucket my-example-bucket-d1
