@@ -1,47 +1,61 @@
 Prerequisites
 AWS CLI installed and configured with appropriate permissions.
 Basic knowledge of AWS S3 concepts.
+
 Step 1: Setting Up AWS CLI Environment
+
 1.1
 Open CloudShell or Terminal
-✋
+
 aws configure
+
 1.2
 Enable Auto Prompt (Optional)
-✋
+
 export AWS_CLI_AUTO_PROMPT=on-partial
+
 Step 2: Creating an S3 Bucket
+
 2.1
 Create a Bucket
-✋
+
 aws s3api create-bucket --bucket my-example-bucket-ab --region us-east-1
+
 Step 3: Listing Buckets
+
 3.1
 List All Buckets
-✋
+
 aws s3api list-buckets --query "Buckets[].Name"
+
 Step 4: Uploading Objects
+
 4.1
 Upload a Single Object
-✋
-aws s3 cp path/to/local/file.txt s3://my-example-bucket-ab/
+
+aws s3 cp path/to/local/file.txt s3://my-example-bucket-d1/
+
 4.2
 Upload Multiple Objects Using Sync
-✋
-aws s3 sync path/to/local/directory/ s3://my-example-bucket-ab/
+
+aws s3 sync path/to/local/directory/ s3://my-example-bucket-d1/
 Step 5: Downloading Objects
+
 5.1
 Download a Single Object
-✋
+
 aws s3 cp s3://my-example-bucket-ab/file.txt path/to/local/directory/
+
 5.2
 Download Multiple Objects Using Sync
-✋
+
 aws s3 sync s3://my-example-bucket-ab/ path/to/local/directory/
+
 Step 6: Listing Objects
+
 6.1
 List Objects in a Bucket
-✋
+
 aws s3api list-objects --bucket my-example-bucket-ab --query "Contents[].Key"
 TIP: Exclude Folder Names from Results
 When listing objects, folder names end with a /. You can exclude these from the results by applying a JMESPath query. The command to achieve this is as follows:
