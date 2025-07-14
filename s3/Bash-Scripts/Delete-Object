@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-aws s3 rm s3://my-example-bucket-d1/ --recursive

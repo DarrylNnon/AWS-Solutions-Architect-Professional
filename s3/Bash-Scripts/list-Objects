@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-aws s3api list-objects --bucket my-example-bucket-d1 --query "Contents[].Key"

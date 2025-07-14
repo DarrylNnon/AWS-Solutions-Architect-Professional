@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-aws s3 sync s3://my-example-bucket-d1/ path/to/local/directory/

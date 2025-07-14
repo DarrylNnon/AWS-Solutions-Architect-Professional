@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-aws s3api put-bucket-versioning --bucket my-example-bucket-d1 --versioning-configuration Status=Enabled

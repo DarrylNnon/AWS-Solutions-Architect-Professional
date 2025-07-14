@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-aws s3 cp s3://my-example-bucket-d1/file.txt path/to/local/directory/
